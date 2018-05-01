@@ -42,6 +42,19 @@
       <p>It is a static PWA generator for React.</p>
     </div>
 
+    <div id="what-is-pwa" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="What is a Progressive Web App?" font-size="50"></rainbow-text>
+      <p>It uses service workers to pre-cache key resources so you can eliminate dependence on the network.</p>
+      <p>They are super fast.</p>
+    </div>
+
+    <div id="gatsby-pwa" class="step" data-rel-x="2000" data-rel-y="1000">
+      <rainbow-text text="How does Gatsby help?" font-size="50"></rainbow-text>
+      <p>Gatsby loads only the critical HTML, CSS, data, and JavaScript so your site loads as fast as possible.</p>
+      <p>It also has plugins so the site works offline and has a `mainfest.json` which allows you to save the application like an app on your phone. </p>
+    </div>
+
+
     <div id="why-im-talking-about-it" class="step" data-rel-x="2000" data-rel-y="1000">
       <rainbow-text text="What I Built" font-size="50"></rainbow-text>
       <a href="https://www.alispit.tel/on-learning-new-things/">On Learning New Things</a>
@@ -58,32 +71,10 @@
     </div>
 
     <div id="graphql" class="step" data-rel-x="2000" data-rel-y="1000">
-      <pre>
-        export const pageQuery = graphql`
-          query IndexQuery {
-            allMarkdownRemark(
-              sort: { order: DESC, fields: [frontmatter___date] }
-            ) {
-              group(field: frontmatter___tags) {
-                fieldValue
-                totalCount
-              }
-              totalCount
-              edges {
-                node {
-                  id
-                  excerpt(pruneLength: 800)
-                  frontmatter {
-                    date(formatString: "MMMM DD, YYYY")
-                    path
-                    title
-                  }
-                }
-              }
-            }
-          }`
-      </pre>
+      <rainbow-text text="The Code" font-size="50"></rainbow-text>
+      <a href="https://github.com/aspittel/on-learning-new-things/tree/master/src">Code</a>
     </div>
+
     <div id="keep-in-touch" class="step" data-rel-x="0" data-rel-y="1000">
       <div class="slide-header">
         <rainbow-text text="KEEP IN TOUCH!" font-size="75"></rainbow-text>
